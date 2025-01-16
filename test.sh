@@ -1,3 +1,7 @@
+# cd gen
+# py gen.py
+# cd ..
+
 py test.py
 py -m build
 twine check dist/*
@@ -10,4 +14,5 @@ conda activate py39
 pip install --upgrade -i https://test.pypi.org/simple/ x256numpy
 py demo.py
 
+conda deactivate
 twine upload dist/* --verbose
