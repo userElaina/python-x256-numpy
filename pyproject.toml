@@ -3,7 +3,7 @@ name = "x256numpy"
 version = "0.0.1a"
 description = "Quickly find the nearest xterm 256 color index of an RGB (NumPy Version)"
 readme = "README.rst"
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 license = {file = "LICENSE"}
 keywords = ["x256", "xterm", "color"]
 
