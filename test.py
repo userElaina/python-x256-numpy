@@ -1,4 +1,3 @@
-# from x256 import x256
 import src.x256numpy as x256
 
 c0 = 0x297331
