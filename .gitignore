@@ -33,4 +33,4 @@ archive/
 */temp/
 tempCodeRunnerFile.cpp
 
-!src/x256offline/*.bin
+!src/x256offline/*.npz
