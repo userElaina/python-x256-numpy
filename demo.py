@@ -30,6 +30,8 @@ for color in COLOR_X256_LIST:
                 r, g, b, weighted, n_color
             )
             _r = ans[j, k]
-            assert int(_l) == int( _r), (color, j, k, _l, ans[j, k])
-        # print(j)
+            _u = x256numpy.from_rgb(
+                r, g, b, weighted, n_color
+            )
+            assert _l == int(_r) == int(_u), (j, k, _l, _r, _u, ans[j, k])
     print(color, 'OK')
