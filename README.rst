@@ -21,7 +21,7 @@ Simple Example
    import x256numpy as x256
 
    c0 = 0x297331
-   r, g, b = c0 & 0xff, (c0 >> 8) & 0xff, (c0 >> 16) & 0xff
+   b, g, r = c0 & 0xff, (c0 >> 8) & 0xff, (c0 >> 16) & 0xff
    x0e = x256.from_rgb(r, g, b, weighted=False, n_color=232)
    x0w = x256.from_rgb(r, g, b, weighted=True, n_color=232)
    x1e = x256.from_rgb(r, g, b, weighted=False, n_color=256)
