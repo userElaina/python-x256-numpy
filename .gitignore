@@ -24,6 +24,11 @@ __pycache__/
 *.zip
 *.7z
 
+*.npy
+*.npz
+*.csv
+*.tsv
+
 archive/
 */temp/
 tempCodeRunnerFile.cpp
