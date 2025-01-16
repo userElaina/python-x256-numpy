@@ -30,7 +30,7 @@ dev = ["x256offline >= 0.0.4"]
 "Source" = "https://github.com/userElaina/python-x256-numpy"
 
 [tool.setuptools]
-package-data = {"x256offline" = ["x256.npz"]}
+package-data = {"x256numpy" = ["x256.npz"]}
 
 [build-system]
 requires = ["setuptools>=43.0.0", "wheel"]
