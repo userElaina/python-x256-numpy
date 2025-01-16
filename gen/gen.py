@@ -5,7 +5,7 @@ import x256offline
 data = x256offline.x256.DATA
 data = np.array(list(data), dtype=np.uint8)
 data.resize(256, 256, 256, 4)
-RGB_X256 = data.transpose(3, 2, 1, 0)
+RGB_X256 = data.transpose(3, 0, 1, 2)
 
 X256_RGB = np.array([
     0x000000, 0x800000, 0x008000, 0x808000, 0x000080, 0x800080, 0x008080, 0xc0c0c0,
