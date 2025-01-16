@@ -21,7 +21,7 @@ img = img.astype(np.int32)
 for color in COLOR_X256_LIST:
     weighted = color in [COLOR_X256W, COLOR_X232W]
     n_color = 232 if color in [COLOR_X232E, COLOR_X232W] else 256
-    ans = x256numpy.from_rgb(img[:, :, 0], img[:, :, 1], img[:, :, 2], weighted, n_color)
+    ans = x256numpy.from_rgb(img[:, :, 2], img[:, :, 1], img[:, :, 0], weighted, n_color)
     print(ans.shape)
     for j in range(x):
         for k in range(y):
