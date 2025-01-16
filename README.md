@@ -6,24 +6,29 @@ NumPy version of [python-x256-offline](https://github.com/userElaina/python-x256
 
 ## Installation
 
-```sh
+```shell
 python -m pip install x256numpy
 ```
 
 ## Simple Example
 
-```py
+```python
 import x256numpy as x256
 
-c0 = 0x23307b
-x0e = x256.from_rgb(c0)
-x0w = x256.from_rgb(c0, weighted=True)
+c0 = 0x297331
+r, g, b = c0 & 0xff, (c0 >> 8) & 0xff, (c0 >> 16) & 0xff
+x0e = x256.from_rgb(r, g, b, weighted=False, n_color=232)
+x0w = x256.from_rgb(r, g, b, weighted=True, n_color=232)
+x1e = x256.from_rgb(r, g, b, weighted=False, n_color=256)
+x1w = x256.from_rgb(r, g, b, weighted=True, n_color=256)
 
-print(hex(c0))
-print(x0e, hex(x256.to_rgb(x0e)))
-print(x0w, hex(x256.to_rgb(x0w)))
+print('%06x %d %06x %d %06x %d %06x %d %06x' % (
+    c0,
+    x0e, x256.to_rgb(x0e),
+    x0w, x256.to_rgb(x0w),
+    x1e, x256.to_rgb(x1e),
+    x1w, x256.to_rgb(x1w)
+))
 
-# 0x23307b
-# 4 0x80
-# 24 0x5f87
+# 297331 23 005f5f 2 008000 238 444444 239 4e4e4e
 ```
