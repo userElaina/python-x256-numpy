@@ -4,7 +4,7 @@ python-x256-numpy
 Quickly find the nearest xterm 256 color index of an RGB.
 
 NumPy version of
-`python-x256-offline <https://github.com/userElaina/python-x256-offline>`__.
+`python-x256-offline <https://pypi.org/project/x256offline/>`__.
 
 Installation
 ------------
